@@ -36,7 +36,7 @@ try:
     service = build("drive", "v3", credentials=creds)
 
     response = service.files().list(
-        q="name='zdjemcia' and mimeType='application/vnd.google-apps.folder'",
+        q="name='zdjecia' and mimeType='application/vnd.google-apps.folder'",
         spaces='drive'
     ).execute()
 
